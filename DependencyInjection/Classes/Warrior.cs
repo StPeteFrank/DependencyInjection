@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DependencyInjection
 {
-    public abstract class Warrior
+    public abstract class Warrior        //Abstract Parent Class
     {
         public string Name { get; set; }
         public int Health { get; set; }

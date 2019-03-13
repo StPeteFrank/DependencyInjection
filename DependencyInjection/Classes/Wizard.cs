@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DependencyInjection.Classes
 {
-    class Wizaed
+    public class Wizard
     {
     }
 }

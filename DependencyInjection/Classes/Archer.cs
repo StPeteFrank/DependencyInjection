@@ -4,7 +4,8 @@ using System.Text;
 
 namespace DependencyInjection.Classes
 {
-    class Archer
+    public class Archer
     {
+
     }
 }
