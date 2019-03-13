@@ -5,11 +5,11 @@ using System.Text;
 
 namespace DependencyInjection.Classes
 {
-    public class Knight : Warrior, IAttacker
+    public class Knight : Warrior 
     {
-        public void Attack()
+        public Knight() : base(new Sword())
         {
-            throw new NotImplementedException();
+
         }
     }
 
