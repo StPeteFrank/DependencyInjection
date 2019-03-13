@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DependencyInjection.Classes;
+using System;
+using System.Collections.Generic;
 
 namespace DependencyInjection
 {
@@ -14,7 +16,22 @@ namespace DependencyInjection
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            var lancelot = new Knight();
+          
+            var legolas = new Archer();
+           
+            var merlin = new Wizard();
+            
+             var army = new List<Warrior>();
+            army.Add(lancelot);
+            army.Add(legolas);
+            army.Add(merlin);
+
+            army.ForEach(fighter => fighter.Attack());
+
+            //Console.WriteLine("Hello World!");
+            Console.ReadLine();
         }
     }
 }
